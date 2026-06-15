@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZOUMSHOPPING</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* MENU */
+header{
+    background:green;
+    padding:15px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+/* BANNIERE */
+.hero{
+    background:url("images/banniere.jpg") center/cover;
+    height:400px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:green;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    text-shadow:2px 2px 5px green;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:orange;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* CATEGORIES */
+.categories{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.categories h2{
+    margin-bottom:30px;
+}
+
+.boxes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.box{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.box img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.box h3{
+    margin:15px 0;
+}
+
+.box a{
+    text-decoration:none;
+    background:#28a745;
+    color:white;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+/* PRODUITS */
+.produits{
+    padding:50px 20px;
+}
+
+.produits h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.prix{
+    color:red;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.card button{
+    background:#ff6600;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+/* CONTACT */
+.contact{
+    background:#fff;
+    padding:40px;
+    text-align:center;
+}
+
+.contact a{
+    background:green;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:5px;
+}
+
+/* FOOTER */
+footer{
+    background:green;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="./index.html">Accueil</a>
+        <a href="./Clubs.html">Maillots Clubs</a>
+        <a href="./Pays.html">Maillots Pays</a>
+        
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>ZOUMSHOPPING</h1>
+    <p>Votre boutique de maillots et téléphones à Abidjan</p>
+   
+</section>
+
+<section class="categories">
+    <h2>Découvrir nos produits</h2>
+
+    <div class="boxes">
+
+        <div class="box">
+            <img src="./PL.jpg" alt="">
+            <h3>⚽ Maillots de Clubs</h3>
+            <a href="clubs.html">Voir</a>
+        </div>
+
+        <div class="box">
+            <img src="./Image d'acceuil.webp" alt="">
+            <h3>🌍 Maillots des Pays</h3>
+            <a href="pays.html">Voir</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Commandez maintenant</h2>
+    <p>Contactez-nous directement sur WhatsApp</p>
+    <br>
+    <a href="https://wa.me/+2250574007715">WhatsApp</a>
+</section>
+
+<footer>
+    <p>© 2026 ZOUMSHOPPING | Abidjan, Côte d'Ivoire</p>
+</footer>
+
+</body>
+</html>
